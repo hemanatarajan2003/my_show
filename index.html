@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Book My Show</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- Navigation Bar -->
+  <header class="navbar">
+    <div class="logo">🎬 BookMyShow</div>
+    <nav>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#movies">Movies</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Video Banner Section -->
+  <section id="home" class="hero-section">
+    <div class="video-banner">
+      <video autoplay muted loop>
+        <source src="https://www.w3schools.com/html/movie.mp4" type="video/mp4" />
+        Your browser does not support the video tag.
+      </video>
+    </div>
+    <div class="hero-text">
+      <h1>Welcome to Book My Show</h1>
+      <p>Your favorite movies at your fingertips</p>
+    </div>
+  </section>
+
+  <!-- Movies Section -->
+  <section id="movies" class="movies-section">
+    <h2>Trending Movies</h2>
+    <div class="movies-container">
+      <!-- Movie Card 1 -->
+      <div class="movie-card">
+        <img src="https://via.placeholder.com/300x450" alt="Movie 1" />
+        <h3>Oppenheimer</h3>
+        <p>A thrilling drama based on historical events.</p>
+        <button onclick="showTrailer('Oppenheimer')">Watch Trailer</button>
+      </div>
+
+      <!-- Movie Card 2 -->
+      <div class="movie-card">
+        <img src="https://via.placeholder.com/300x450" alt="Movie 2" />
+        <h3>Barbie</h3>
+        <p>A colorful adventure of Barbie's world.</p>
+        <button onclick="showTrailer('Barbie')">Watch Trailer</button>
+      </div>
+
+      <!-- Movie Card 3 -->
+      <div class="movie-card">
+        <img src="https://via.placeholder.com/300x450" alt="Movie 3" />
+        <h3>Mission Impossible</h3>
+        <p>Tom Cruise returns for another heart-pounding mission.</p>
+        <button onclick="showTrailer('Mission Impossible')">Watch Trailer</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="contact-section">
+    <h2>Contact Us</h2>
+    <p>Email: support@bookmyshow.com</p>
+    <p>Phone: +1 234 567 890</p>
+  </section>
+
+  <footer class="footer">
+    <p>&copy; 2025 BookMyShow. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
